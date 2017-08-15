@@ -1,0 +1,3 @@
+[submodule "themes/ylion"]
+	path = themes/ylion
+	url = https://github.com/kneep/hexo-theme-ylion.git
