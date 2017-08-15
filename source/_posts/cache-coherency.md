@@ -1,13 +1,12 @@
 ---
 title: 缓存一致性（Cache Coherency）入门
 date: 2017-08-15 16:46:13
+img: http://static.oschina.net/uploads/img/201302/27113714_KQTE.png
 tags:
  - 计算机原理
  - 译文
 categories: 技术
 ---
-
-_本文是RAD Game Tools程序员Fabian “ryg” Giesen在其博客上发表的《Cache coherency primer》一文的翻译。原文https://fgiesen.wordpress.com/2014/07/07/cache-coherency/_
 
 # 缓存（Cache）
 本文是关于CPU缓存的快速入门。我假设你已经有了基本概念，但你可能不熟悉其中的一些细节。（如果你已经熟悉了，你可以忽略这部分。）
@@ -92,3 +91,5 @@ MESI协议是一个合适的状态机，既能处理来自本地处理器的请�
 使用强一点的内存模型的体系结构则会在内部做很多记录工作。比如，x86会跟踪所有在等待中的内存操作，这些操作都还没有完全完成（称为“退休（retired）”）。它会把它们的信息保存在芯片内部的MOB（“memory ordering buffer”，内存排序缓冲）。x86作为部分支持乱序执行的体系结构，在出问题的时候能把尚未“退休”的指令撤销掉——比如发生页错误（page fault），或者分支预测失败（branch mispredict）的时候。我已经在我以前的文章“[好奇地说](http://fgiesen.wordpress.com/2013/03/04/speculatively-speaking/)”中提到过一些细节，以及和内存子系统的一些交互。主旨是x86处理器会主动地监控外部事件（比如缓存失效），有些已经执行完的操作会因为这些事件而被撤销，但不算“退休”。这就是说，x86知道自己的内存模型应该是什么样子的，当发生了一件和这个模型冲突的事，处理器会回退到上一个与内存模型兼容的状态。这就是我在[以前另一篇文章](http://fgiesen.wordpress.com/2013/01/31/cores-dont-like-to-share/)中提到的“清除内存排序机（memory ordering machine clear）”。最后的结果是，x86处理器为内存操作提供了很强的一致性保证——虽然没有达到完美的顺序一致性。
 
 无论如何，一篇文章讲这么多已经够了。我把它放在我的博客上。我的想法是将来的文章只要引用它就行了。我们看效果吧。感谢阅读！
+
+_本文是RAD Game Tools程序员Fabian “ryg” Giesen在其博客上发表的《Cache coherency primer》一文的翻译。原文https://fgiesen.wordpress.com/2014/07/07/cache-coherency/_

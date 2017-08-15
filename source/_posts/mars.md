@@ -1,13 +1,12 @@
 ---
 title: 火星上到底发生了什么
 date: 2017-08-15 13:05:18
+img: http://n.sinaimg.cn/tech/transform/20160305/e0Ae-fxqaffy3630757.jpg    
 categories: 技术
 tags:
  - 操作系统
  - 译文
 ---
-
-_原文链接：https://www.microsoft.com/en-us/research/people/mbj/_
 
 在刚刚登陆火星表面的那几天，火星探路者号的表现可谓无懈可击。在气囊保护下着陆、部署Sojourner Rover（译者注：一辆小机械车）、发回大量数据，包括后来在网上点击率很高的那些全景图。但是几天后，也就是探路者号开始收集气象数据不久，整个系统发生了重启，每次重启都导致数据丢失。关于原因，媒体的说法是“软件小故障”或者“系统想一次性做太多的工作”。
 
@@ -49,3 +48,5 @@ David 也提到了这个案子真正的幕后英雄是卡耐基梅隆大学的�
 # 后记
 为完整起见，这篇论文是：
 L. Sha, R. Rajkumar, and J. P. Lehoczky. Priority Inheritance Protocols: An Approach to Real-Time Synchronization. In IEEE Transactions on Computers, vol. 39, pp. 1175-1185, Sep. 1990.
+
+_原文链接：https://www.microsoft.com/en-us/research/people/mbj/_
