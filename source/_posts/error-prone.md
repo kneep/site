@@ -21,7 +21,7 @@ tags:
 
 编译模块的时候加上```RUN_ERROR_PRONE=true```，比如编译Android框架：
 
-```shell
+```bash
 source build/envsentup.sh
 lunch aosp_arm64-eng
 RUN_ERROR_PRONE=true make -j8 framework
@@ -32,7 +32,7 @@ RUN_ERROR_PRONE=true make -j8 framework
 # 检查结果示例
 
 Error Prone是嵌入```javac```的编译过程中的，所以如果它的输出就是编译器的输出，如果发生错误，就会中止编译过程。以下是一个```warning```：
-```
+```plain
 frameworks/opt/net/ims/src/java/com/android/ims/internal/VideoPauseTracker.java:160: warning: [SynchronizeOnNonFinalField] Synchronizing on non-final fields is not safe: if the field is ever updated, different threads may end up locking on different objects.
         synchronized (mPauseRequestsLock) {
                      ^
