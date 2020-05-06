@@ -6,7 +6,7 @@ tags:
 categories: 技术
 ---
 
-*编者的话：提起Linux之父Linus Torvalds，人们首先想到的是他的不近人情，总是听说他“炮轰”这个“炮轰”那个，却很难有机会接近他，了解他是个什么样的人。近日，他做客TED，为我们展现了他鲜为人知的一面。他两次改变了技术世界，第一次是Linux，第二次是Git，他是如何想到要开发这两个软件的？他如何看待开源运动？他又是如何评价自己的性格？以下是访谈全文，翻译自[TED视频](https://www.ted.com/talks/linus_torvalds_the_mind_behind_linux/)字幕。*
+*编者的话：提起Linux之父Linus Torvalds，人们首先想到的是他的不近人情，总是听说他“炮轰”这个“炮轰”那个，却很难有机会接近他，了解他是个什么样的人。近日，他做客TED，为我们展现了他鲜为人知的一面。他两次改变了技术世界，第一次是Linux，第二次是Git，他是如何想到要开发这两个软件的？他如何看待开源运动？他又是如何评价自己的性格？以下是访谈全文，翻译自[TED视频](https://www.ted.com/talks/linus_torvalds_the_mind_behind_linux/)字幕。*<!-- more -->
 
 (Chris Anderson橙色框，Linus Torvalds蓝色框)
 
